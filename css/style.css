@@ -120,6 +120,7 @@ body {
 
 .faq-lista {
     grid-column: 2 / 4;
+    font-size: 1.8rem;
 }
 
 footer {
