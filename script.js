@@ -259,37 +259,44 @@
 // Quando o usuário clicar nos links internos do site,
 // adicione a classe ativo ao item clicado e remova dos
 // demais itens caso eles possuam a mesma. Previna
-// o comportamento padrão desses links
-const linksInternos = document.querySelectorAll("a[href^='#']");
+// // o comportamento padrão desses links
+// const linksInternos = document.querySelectorAll("a[href^='#']");
 
-function handleLink(evento) {
-    evento.preventDefault();
-    linksInternos.forEach((link)=>{
-        link.classList.remove("ativo"); //REMOVE O ATIVO ATUAL
-    });
-    this.classList.add("ativo"); //ADD O ATIVO SOMENTE NO QUAL PRECISA
-}
+// function handleLink(evento) {
+//     evento.preventDefault();
+//     linksInternos.forEach((link)=>{
+//         link.classList.remove("ativo"); //REMOVE O ATIVO ATUAL
+//     });
+//     this.classList.add("ativo"); //ADD O ATIVO SOMENTE NO QUAL PRECISA
+// }
 
-linksInternos.forEach((link) => {
-    link.addEventListener('click', handleLink);
-});
+// linksInternos.forEach((link) => {
+//     link.addEventListener('click', handleLink);
+// });
 
-// Selecione todos os elementos do site começando a partir do body,
-// ao clique mostre exatamente quais elementos estão sendo clicados
-const elementosBody = document.querySelectorAll("body *");
+// // Selecione todos os elementos do site começando a partir do body,
+// // ao clique mostre exatamente quais elementos estão sendo clicados
+// const elementosBody = document.querySelectorAll("body *");
 
-function elementoSelecionado(evento) {
-    console.log(evento.currentTarget);
-}
+// function elementoSelecionado(evento) {
+//     console.log(evento.currentTarget);
+// }
 
-elementosBody.forEach((elemento) => {
-    elemento.addEventListener('click', elementoSelecionado);
-});
+// elementosBody.forEach((elemento) => {
+//     elemento.addEventListener('click', elementoSelecionado);
+// });
 
-// Utilizando o código anterior, ao invés de mostrar no console,
-// remova o elemento que está sendo clicado, o método remove() remove um elemento
-function elementoSelecionado(evento) {
-    evento.currentTarget.remove();
-}
+// // Utilizando o código anterior, ao invés de mostrar no console,
+// // remova o elemento que está sendo clicado, o método remove() remove um elemento
+// // function elementoSelecionado(evento) {
+// //     // evento.currentTarget.remove();
+// // }
 
-// Se o usuário clicar na tecla (t), aumente todo o texto do site. 
+// // Se o usuário clicar na tecla (t), aumente todo o texto do site. 
+// function aumentarText(evento) {
+//     if(evento.key === 't') {
+//         document.documentElement.classList.toggle('textomaior');
+//     }
+// }
+
+// window.addEventListener('keydown', aumentarText);
