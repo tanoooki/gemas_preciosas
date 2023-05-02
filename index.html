@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.className +=' js';</script>
     <title>Gemas Fanstásticas</title>
 </head>
 <body>
-    <nav class="menu">
+    <nav class="menu js-menu">
         <ul>
             <li><a href="#gemas">Gemas</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contato">Contato</a></li>
-            <li><a href="https://tanoooki.github.io">Dev →</a></li>
+            <li><a href="https://tanoooki.github.io" target="_blank">Dev →</a></li>
         </ul>
     </nav>
-    <section class="grid-section gemas" id="gemas">
+    <section class="grid-section gemas js-scroll" id="gemas">
         <h1 class="titulo">Gemas Fantásticas</h1>
-        <ul class="gemas-lista">
+        <ul class="gemas-lista js-tabmenu">
             <li>
                 <img src="img/imagem1.jpg" alt="Cristal Azul">
             </li>
@@ -38,7 +39,7 @@
                 <img src="img/imagem6.jpg" alt="Rutilo">
             </li>
         </ul>
-        <div class="gemas-descricao">
+        <div class="gemas-descricao js-tabcontent">
             <section>
                 <h2>Quartzo</h2>
                 <p>O quartzo ou quarço é o segundo mineral mais abundante da Terra, perdendo apenas para o grupo de feldspatos.
@@ -83,9 +84,9 @@
             </section>
         </div>
     </section>
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section faq js-scroll" id="faq">
         <h1 class="titulo">FAQ</h1>
-        <dl class="faq-lista">
+        <dl class="faq-lista js-accordion">
             <dt>Quais são as propriedades mágicas?</dt>
             <dd>Misca Musca Mickey Mouse</dd>
             <dt>Qual é o cristal mais abundante no mundo?</dt>
@@ -97,7 +98,7 @@
         </dl>
     </section>
 
-    <section class="grid-section contato" id="contato">
+    <section class="grid-section contato js-scroll" id="contato">
         <h1 class="titulo">Contato</h1>
         <div class="mapa">
             <img src="./img/mapa.png" alt="mapa localização">

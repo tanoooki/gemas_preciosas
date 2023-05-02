@@ -99,6 +99,15 @@ body {
     overflow-y: scroll;
     grid-column: 2;
 }
+
+.gemas-lista li {
+ cursor: pointer;
+}
+
+.gemas-lista li:hover {
+    opacity: 0.9;
+}
+
 /* largura scrollbar */
 .gemas-lista::-webkit-scrollbar { 
     width: 18px;
@@ -216,3 +225,66 @@ body {
         margin-bottom: 0px;
     }
 }
+
+
+.js .js-tabcontent section {
+    display: none;
+}
+
+.js .js-tabcontent section.ativo {
+    display: block !important;
+    animation: show .5s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px,0,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.js .js-accordion dd {
+    display: none;
+}
+
+
+
+.js-accordion dt::after {
+    content: "⤵";
+    margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+    content: "⤴";
+}
+
+.js-accordion dd.ativo {
+    display: block;
+    animation: down .3s forwards;
+}
+
+@keyframes down {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        max-height: 600px;
+        opacity: 1;
+    }
+}
+
+.js .js-scroll {
+    opacity: 0;
+    transform: translate3d(-30, 0, 0);
+}
+.js .js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s;
+}
+
