@@ -15,6 +15,15 @@
         <nav class="menu" data-menu="suave" ]>
             <ul>
                 <li><a href="#gemas">Gemas</a></li>
+                <li data-dropdown>
+                    <a href="sobre.html">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="empresa.html">A Empresa</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="socios.html">Sócios</a></li>
+                        <li><a href="investidores.html">Investidores</a></li>
+                    </ul>
+                </li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a data-modal="abrir" href="login.html">Login</a></li>
@@ -49,10 +58,18 @@
                     <p>O quartzo ou quarço é o segundo mineral mais abundante da Terra, perdendo apenas para o grupo de
                         feldspatos.
                         Possui estrutura cristalina trigonal composta por tetraedros de sílica, onde cada oxigênio fica
-                        dividido entre
-                        dois tetraedros.</p>
+                        dividido entre dois tetraedros.</p>
                     <p>Sua cor é transparente, com variedades de cores conforme os elementos presentes na fórmula
                         química</p>
+                    <p>O quartzo é o principal mineral do grupo de SiO2 dos tectossilicatos. Além de ser formado só por
+                        tetraedros de sílica altamente polimerizados, sua estrutura química simples o relaciona à grande
+                        variedade de polimorfos de sílica (cristobalita e tridimita, membros do grupo e diferenciados só
+                        pelo arranjo tridimensional dos tetraedros de sílica).</p>
+                    <p> Existem dois tipos de variedades de quartzo: as variedades cristalinas de granulação grossa e as
+                        variedades criptocristalinas. As últimas divididas entre variedades criptocristalinas e
+                        variedades granulares.</p>
+                    <p> fortes piroeletricidade e piezoeletricidade, propriedades que são extensamente aproveitadas na
+                        industria.</p>
                 </section>
                 <section data-anime="show-right">
                     <h2>Ametista</h2>
@@ -122,7 +139,7 @@
 
         <section class="grid-section contato" data-anime="scroll" id="contato">
             <h1 class="titulo">Contato</h1>
-            <div class="mapa">
+            <div class="mapa" data-tooltip aria-label="Endereço próximo ao mercado municipal">
                 <img src="./img/mapa.png" alt="mapa localização">
             </div>
             <ul class="dados">
@@ -141,7 +158,7 @@
         <div class="modal">
             <button data-modal="fechar" class="fechar">X</button>
             <form action="">
-                <label for="email" >Email</label>
+                <label for="email">Email</label>
                 <input type="text" for="email" id="email">
                 <label for="senha">Senha</label>
                 <input type="password" for="senha" id="senha">

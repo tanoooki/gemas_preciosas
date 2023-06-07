@@ -1,4 +1,4 @@
-.grid-container, h1, h2, h3, ul, li, p, dd, dt, dl {
+.grid-container, h1, h2, h3, ul, li, p, dd, dt, dl, body {
     margin: 0px;
     padding: 0px;
 }
@@ -17,7 +17,7 @@ ul {
 }
 
 .grid-container {
-    background: #edf8fa;
+    background: ccc;
     color: #222;
     -webkit-font-smoothing: antialiased;
 
@@ -78,11 +78,12 @@ ul {
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.2;
     margin-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
 .gemas h2 {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .1em;
     margin-bottom: 1rem;
@@ -228,7 +229,34 @@ ul {
     .copy {
         margin-bottom: 0px;
     }
-}
+    .gemas-descricao p {
+        font-size: 1rem;
+    }
+    /* largura scrollbar */
+    .gemas-lista::-webkit-scrollbar { 
+    width: 12px;
+    }
+    /* scrollbar cor */
+    .gemas-lista::-webkit-scrollbar-thumb {
+        background: rgb(85, 187, 255);
+        border-left: 2px solid #edf8fa;
+        border-right: 2px solid #edf8fa;
+    }
+    /* background do scroll */
+    .gemas-lista::-webkit-scrollbar-track {
+        background: #edf8fa;
+    }
+    .faq dt {
+        font-size: 1.2rem;
+    }
+    .faq dd {
+        font-size: 1rem;
+    }
+    .mapa img {
+        max-width: 90vw;
+        align-self: center;
+    }
+    }
 
 .js [data-tab="content"] section {
     display: none;
