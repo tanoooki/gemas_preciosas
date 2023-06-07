@@ -20,7 +20,7 @@ ul {
     background: ccc;
     color: #222;
     -webkit-font-smoothing: antialiased;
-
+    max-width: 1200px;
 }
 
 .grid-container {
