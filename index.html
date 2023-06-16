@@ -13,7 +13,8 @@
 <body>
     <div class="grid-container">
         <nav class="menu" data-menu="suave" ]>
-            <ul>
+            <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <ul data-menu="list" id="menu">
                 <li><a href="#gemas">Gemas</a></li>
                 <li data-dropdown>
                     <a href="sobre.html">Sobre</a>
@@ -137,6 +138,38 @@
             </dl>
         </section>
 
+        <section class="grid-section numeros" data-anime="scroll">
+            <h1 class="titulo">Numeros</h1>
+            <div class="numeros-grid">
+                <div class="numero-gema">
+                    <h3>Quartzos</h3>
+                    <span data-numero>4874</span>
+                </div>
+                <div class="numero-gema">
+                    <h3>Ametista</h3>
+                    <span data-numero>2563</span>
+                </div>
+                <div class="numero-gema">
+                    <h3>Citrino</h3>
+                    <span data-numero>2964</span>
+                </div>
+                    <div class="numero-gema">
+                        <h3>Esmeralda</h3>
+                        <span data-numero>5423</span>
+                    </div>
+                        <div class="numero-gema">
+                            <h3>Phosphophyllite</h3>
+                            <span data-numero>4243</span>
+                        </div>
+                        <div class="numero-gema">
+                            <h3>Rutilo</h3>
+                            <span data-numero>163</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="grid-section contato" data-anime="scroll" id="contato">
             <h1 class="titulo">Contato</h1>
             <div class="mapa" data-tooltip aria-label="Endereço próximo ao mercado municipal">
@@ -147,6 +180,7 @@
                 <li>+55 (47)93300-3396</li>
                 <li>Rua da Paz, nº 460</li>
                 <li>Curitiba - PR</li>
+                <li data-semana="1,2,3,4,5" data-horario="8,18">Seg a Sex das 8 às 18h</li>
             </ul>
         </section>
 
